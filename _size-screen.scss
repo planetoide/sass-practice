@@ -1,0 +1,40 @@
+// Small 
+$screen-sm-min: 576px;
+
+// tablets
+$screen-md-min: 768px;
+
+// desktops
+$screen-lg-min: 992px;
+
+// Large 
+$screen-xl-min: 1200px;
+
+/*mixins*/
+// dispositivos Small 
+@mixin sm {
+   @media only screen and (min-width: #{$screen-sm-min}) {
+       @content;
+   }
+}
+
+// dispositivos Medium
+@mixin md {
+   @media only screen and (min-width: #{$screen-md-min}) {
+       @content;
+   }
+}
+
+// dispositivos Large 
+@mixin lg {
+   @media only screen and (min-width: #{$screen-lg-min}) {
+       @content;
+   }
+}
+
+// dispositivos Extra large 
+@mixin xl {
+   @media only screen and (min-width: #{$screen-xl-min}) {
+       @content;
+   }
+}
